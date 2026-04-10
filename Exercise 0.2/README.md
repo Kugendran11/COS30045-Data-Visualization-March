@@ -62,3 +62,12 @@ energy-webpage-v1
 │
 ├── index.html
 └── README.md
+
+
+**Generative AI Declaration**
+
+This project was developed with the assistance of generative AI tools, including ChatGPT. The AI tool was used to support learning and development by providing guidance on HTML, CSS, and JavaScript implementation, debugging code issues, and suggesting improvements to webpage structure and functionality.
+
+All code generated or suggested by AI was reviewed, modified, and integrated by me to ensure it met the assignment requirements and reflected my own understanding. The final submission represents my own work, with AI used only as a support tool.
+
+No AI-generated content was submitted without critical evaluation and adaptation.
