@@ -1,0 +1,159 @@
+/* Keep your existing Reset, Body, and Navbar styles exactly as they are */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background: #0066cc;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+.navbar ul li a.active {
+  background: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* --- New Data Story Styles --- */
+
+.data-story {
+  text-align: left;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.story-block {
+  margin: 40px 0;
+  padding-bottom: 20px;
+}
+
+.story-block h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.viz-container {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.insight-box {
+  background-color: #eef6ff;
+  border-left: 5px solid #ffcc00; /* Matching your active nav color */
+  padding: 20px;
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.conclusion-block {
+  background: #004080;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.conclusion-block h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* --- Content Area --- */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  flex: 1; /* Pushes footer to bottom */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* --- Updated Footer --- */
+footer {
+  text-align: center;
+  background: #004080;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  margin-top: auto; /* Ensures it stays at bottom of content */
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+}
