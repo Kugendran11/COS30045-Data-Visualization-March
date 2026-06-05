@@ -1,0 +1,115 @@
+/* Base Page Structure */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #3498db;
+}
+
+main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #7f8c8d;
+}
+
+/* Smooth view transition classes */
+.fade-in {
+  animation: fadeInEffect 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInEffect {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================
+   EXERCISE 4.3: RESPONSIVE SVG CONTAINER
+   ========================================== */
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box; /* Ensures padding doesn't push the borders out */
+}
+
+/* ==========================================
+   EXERCISE 4.5: DATA BAR STYLING
+   ========================================== */
+.bar {
+  fill: #3498db;          /* Clean blue for data representation */
+  stroke: #2980b9;        /* Slightly darker framing border */
+  stroke-width: 1px;
+  transition: fill 0.2s ease;
+}
+
+.bar:hover {
+  fill: #2ecc71;          /* Turns interactive green on cursor hover */
+}
+
+/* ==========================================
+   EXERCISE 4.7: CHART TYPOGRAPHY STYLING
+   ========================================== */
+.category-label {
+  fill: #2c3e50;
+  font-weight: 600;
+}
+
+.value-label {
+  fill: #7f8c8d;
+  font-weight: bold;
+}
