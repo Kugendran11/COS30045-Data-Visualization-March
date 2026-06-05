@@ -8,10 +8,10 @@
         <entry key="authored-by" type="xstring" value="kugen"/>
         <entry key="authored-when" type="xstring" value="2025-11-02 18:59:00 +0800"/>
         <entry key="lastEdited-by" type="xstring" value="kugen"/>
-        <entry key="lastEdited-when" type="xstring" value="2026-05-13 11:39:39 +0800"/>
+        <entry key="lastEdited-when" type="xstring" value="2026-06-04 13:40:39 +0800"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_5">
