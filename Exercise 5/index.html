@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Appliances | Multi-Chart Data Analytics</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Appliance Energy & Hardware Metrics Dashboard</h1>
+    <p>Comprehensive data stories across screen sizes, manufacturing brands, and technology counts.</p>
+  </header>
+
+  <main class="dashboard-grid">
+    
+    <section class="card">
+      <div class="card-header">
+        <h2>Top 10 Television Brands by Model Volume</h2>
+        <p>Analyzing the most frequent brand submissions across your appliance dataset inventory.</p>
+      </div>
+      <div id="scatter-chart" class="responsive-chart"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Total Submission Distribution by Technology</h2>
+        <p>Percentage split of total model submissions across primary screen technology types.</p>
+      </div>
+      <div id="donut-chart" class="responsive-chart"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Power Supply Unit Volume by Tech Group</h2>
+        <p>A vertical operational assessment measuring manufacturing density totals.</p>
+      </div>
+      <div id="bar-chart-55" class="responsive-chart"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Screen Size (Inches) Frequency Distribution</h2>
+        <p>Tracking production and retail spikes along standard consumer display dimension lines.</p>
+      </div>
+      <div id="line-chart" class="responsive-chart"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Kugendran | COS30045 Data Visualisation Lab Module 5</p>
+  </footer>
+
+  <script src="js/scatterplot.js" defer></script>
+  <script src="js/donut.js" defer></script>
+  <script src="js/barchart55.js" defer></script>
+  <script src="js/linechart.js" defer></script>
+
+</body>
+</html>

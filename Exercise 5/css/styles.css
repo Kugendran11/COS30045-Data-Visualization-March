@@ -1,0 +1,94 @@
+/* Core Page Theme Settings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+header p {
+  margin: 0.5rem 0 0 0;
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+/* Responsive Dashboard Grid Mechanics */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Professional Dashboard Card Components */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.card-header p {
+  margin: 0.25rem 0 1.5rem 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Fluid Responsive Graph Framework Wrapper */
+.responsive-chart {
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  border: 1px dashed #cbd5e1;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  font-size: 0.85rem;
+  border-top: 1px solid #e2e8f0;
+  background-color: #fff;
+  margin-top: 3rem;
+}
+
+/* Global D3 Interactive Shared Styling Properties */
+.d3-axis path,
+.d3-axis line {
+  stroke: #94a3b8;
+}
+
+.d3-axis text {
+  font-size: 11px;
+  fill: #475569;
+}
