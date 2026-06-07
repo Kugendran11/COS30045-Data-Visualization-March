@@ -1,0 +1,19 @@
+/* Step 3 Vis-Specific Structural System CSS Rules */
+#chart-area {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.axis-line path,
+.axis-line line {
+  stroke: #64748b;
+  stroke-width: 1px;
+}
+
+.axis-line text {
+  font-size: 11px;
+  fill: #475569;
+  font-family: sans-serif;
+}
